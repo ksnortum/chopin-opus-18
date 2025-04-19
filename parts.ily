@@ -1635,7 +1635,96 @@ pedal = {
 tempi = {
   \set Score.tempoHideNote = ##t
   \tempo "Vivo" 2. = 72
+  s2. * 4 |
+  \repeat volta 2 {
+    s2. * 15 |
+    \alternative {
+      { s2. }
+      { s2. }
+    }
+  }
+  \tempo 2. = 76
+  s2. * 16 |
+  \tempo 2. = 72
+  s2. * 16 |
+  \tempo 2. = 76
+  s2. * 16 |
   
+  % bar number 70
+  \repeat volta 2 {
+    \tempo 2. = 72
+    s2. * 15 |
+    \alternative {
+      { s2. }
+      { s2. }
+    }
+  }
+  
+  % bar number 87
+  s2. * 14 |
+  \tempo 2. = 66
+  s2. |
+  \tempo 2. = 60
+  s2 \tempo 2. = 50 s4 |
+  \tempo 2. = 72
+  s2. * 16 |
+  
+  % bar number 119
+  \repeat volta 2 {
+    \tempo 2. = 76
+    s2. * 15 |
+    \alternative {
+      { s2. }
+      { s2. }
+    }
+  }
+  
+  % bar number 136
+  \repeat volta 2 {
+    \tempo 2. = 72
+    \grace { s8 } s2. * 16
+    \tempo 2. = 76
+    s2. * 15 |
+    \alternative {
+      { s2. }
+      { s2. }
+    }
+  }
+  
+  % bar number 169
+  \tempo 2. = 66
+  s2. * 16 |
+  \tempo 2. = 72
+  s2. * 8 |
+  
+  % bar number 193
+  s2. * 16 |
+  \tempo 2. = 76
+  s2. * 16 |
+  
+  % bar number 225
+  \tempo 2. = 72
+  s2. * 13 |
+  \tempo 2. = 60
+  s2. * 5 |
+  
+  % bar number 243
+  \tempo 2. = 80
+  s2. * 50
+  
+  % bar number 293
+  \tempo 2. = 84
+  s2. * 2 |
+  \tempo 2. = 88
+  s2. * 2 |
+  \tempo 2. = 92
+  s2. * 2 |
+  \tempo 2. = 96
+  s2. * 11 |
+  \tempo 2. = 72
+  s2. |
+  \tempo 2. = 30
+  s2. |
 }
 
 forceBreaks = {
@@ -1691,5 +1780,4 @@ forceBreaks = {
   \repeat unfold 7 { s2.\noBreak } s2.\break\noPageBreak
   \repeat unfold 6 { s2.\noBreak } s2.\break\noPageBreak
   \repeat unfold 6 { s2.\noBreak } s2.\break\noPageBreak
-  
 }

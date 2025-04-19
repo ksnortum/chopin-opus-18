@@ -51,7 +51,6 @@ accidentalsOverTrillsInsideSlurs = \once {
 
 trillNatural = \markup \tiny \natural
 noPriority = \tweak outside-staff-priority ##f \etc
-lowPrioirty = \tweak outside-staff-priority 100 \etc
 insideSlur = \tweak avoid-slur #'inside \etc
 
 glyphOneA = \tweak X-offset -0.25 ^\markup { " " \musicglyph "one" }
